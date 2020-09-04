@@ -1,4 +1,13 @@
-# run on terminal (test):
+# (test) Upload single file to site:
 gsutil cp /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/utils/test.txt gs://www.techineer.xyz
 
+# (test) Migrate whole folder hierarchy / existing website:
+gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website-test gs://www.techineer.xyz
 
+# --------------------------------------------------------------------------------------------------------------
+
+# Migrate whole folder hierarchy / existing website:
+gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website gs://www.techineer.xyz
+
+# Update / migrate single file to site: STILL NEED TO TEST for specific folders
+gsutil cp /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website gs://www.techineer.xyz
