@@ -1,0 +1,4 @@
+# run on terminal (test):
+gsutil cp /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/utils/test.txt gs://www.techineer.xyz
+
+
