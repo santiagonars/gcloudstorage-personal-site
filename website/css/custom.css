@@ -10,6 +10,8 @@ body {
     /* background-image: url(''); */
     /* background-image: url('https://wallpapercave.com/wp/lam1JQA.jpg'); */
     background-image: url('https://images.unsplash.com/photo-1466970601638-4e5fb6556584?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1778&q=80');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }   
 
 main {
