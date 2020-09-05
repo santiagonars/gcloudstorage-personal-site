@@ -21,10 +21,10 @@ gsutil web set -m index.html -e 404.html gs://www.techineer.xyz
 # ********************* USING CNAME GCLOUD STORAGE API (NO LOAD BALANCING) ********************************
 
 # Migrate whole folder hierarchy / existing website:
-gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website-test gs://www.santiagonorena.tech
+gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website gs://www.santiagonorena.tech
 
 # Update / migrate single file to site: STILL NEED TO TEST for specific folders
-gsutil cp /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website-test/index.html gs://www.santiagonorena.tech
+gsutil cp /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website/index.html gs://www.santiagonorena.tech
 
 # Set index.html as main load page and 404.html as error page
 gsutil web set -m index.html -e 404.html gs://www.santiagonorena.tech
