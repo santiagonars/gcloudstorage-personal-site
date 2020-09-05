@@ -1,0 +1,16 @@
+
+html {
+    text-align: center;
+
+  }
+
+body {
+    background-image: url('https://wallpapercave.com/wp/lam1JQA.jpg');   
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
