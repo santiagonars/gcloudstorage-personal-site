@@ -1,13 +1,30 @@
+# ***************************************** TESTING ************************************************************
 # (test) Upload single file to site:
 gsutil cp /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/utils/test.txt gs://www.techineer.xyz
 
 # (test) Migrate whole folder hierarchy / existing website:
 gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website-test gs://www.techineer.xyz
 
-# --------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------------------------
+# ********************************** USING LOAD BALANCING (HTTPS) ***********************************************
 
 # Migrate whole folder hierarchy / existing website:
 gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website gs://www.techineer.xyz
 
 # Update / migrate single file to site: STILL NEED TO TEST for specific folders
 gsutil cp /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website gs://www.techineer.xyz
+
+# Set index.html as main load page and 404.html as error page
+gsutil web set -m index.html -e 404.html gs://www.techineer.xyz
+
+# ----------------------------------------------------------------------------------------------------------------
+# ********************* USING CNAME GCLOUD STORAGE API (NO LOAD BALANCING (HTTPS) ********************************
+
+# Migrate whole folder hierarchy / existing website:
+gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website-test gs://www.santiagonorena.tech
+
+# Update / migrate single file to site: STILL NEED TO TEST for specific folders
+gsutil cp /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website-test gs://www.santiagonorena.tech
+
+# Set index.html as main load page and 404.html as error page
+gsutil web set -m index.html -e 404.html gs://www.santiagonorena.tech
