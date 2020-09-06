@@ -9,10 +9,17 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }   
+header {
+    padding-top: 10px;
+}
+
+header.a {
+    color:black;
+}
 
 main {
     padding-top: 100px; 
-    padding-bottom: 175px;
+    padding-bottom: 125px;
 }
 
 .container-1 {
