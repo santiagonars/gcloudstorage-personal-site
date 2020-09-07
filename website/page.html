@@ -14,21 +14,19 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <!-- Bootstrap Social Buttons CSS -->
   <link rel = "stylesheet" href = "bootstrap-social.css">
-
   <!-- Custom style for this file -->
   <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
   <header>
-    <a href="page.html" style="color:black;">Home</a>
+    <a href="page.html" class="text-general">Home</a>
   </header>
-  
-  <main id ="home">
+  <main>
     <section class="container-1">
-      <h1 style="color:rgb(25, 25, 25);"><u><a href="about.html" style="color:rgb(25, 25, 25);">Santiago</a></u> Norena</h1>
+      <h1 class="text-general"><u><a href="about.html" class="text-general">Santiago</a></u> Norena</h1>
       <hr style="width:20%">
-      <p style="font-size: 18px">Software <strong>Engineering</strong> + Machine <strong>Learning</strong> + More</p>
+      <p class="text-general" style="font-size:20px">Software <strong>Engineering</strong> + Machine <strong>Learning</strong> + More</p>
     </section>
     <section class="container-2">
       <a href="https://storage.googleapis.com/santiago-info/resume/Resume-Santiago_Norena.pdf">
@@ -37,23 +35,26 @@
           <span style="font-size:18px;color:white">Resume</span>
         </button>
       </a>
-      <br><br>
+      <br>
       <hr style="width:20%">
       <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/santiagonorena/" style="color:black">
-        <span class="fa fa-linkedin" style="font-size:28px;color:white" ></span> LinkedIn
+        <span class="fa fa-linkedin" id="icon-socialmedia"></span>
+        <span id="text-socialmedia"> LinkedIn</span>
       </a>
       <a class="btn btn-social-icon btn-github" href="https://github.com/santiagonorena" style="color:black">
-        <span class="fa fa-github" style="font-size:28px;color:white"></span> GitHub
+        <span class="fa fa-github" id="icon-socialmedia"></span>
+        <span id="text-socialmedia"> GitHub</span> 
       </a>
       <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/22santin" style="color:black">
-        <span class="fa fa-twitter" style="font-size:28px;color:white"></span> Twitter
+        <span class="fa fa-twitter" id="icon-socialmedia"></span>
+        <span id="text-socialmedia"> Twitter</span>  
       </a>
     </section>
   </main>
 
   <footer>
-    <section id="contact">
-        <a href="mailto:san.norena@gmail.com"><i style="font-size:28px;color:white" class="fa">&#xf0e0;</i></a> 
+    <section>
+        <a href="mailto:san.norena@gmail.com"><i id="email-icon" class="fa">&#xf0e0;</i></a> 
     </section>
     <p>&copy; 2020 - Santiago - All rights reserved</p>  
   </footer>

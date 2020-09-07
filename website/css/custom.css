@@ -1,34 +1,40 @@
-
+/* ----MAIN CSS---- */
 body {
-    padding-top: 5px; 
     height: 100%;
     width: 100%;
+    padding-top: 5px; 
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
     text-align: center;
     /* background-image: url(''); */
     background-image: url('https://images.unsplash.com/photo-1466970601638-4e5fb6556584?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1778&q=80');
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-attachment: fixed;
-}   
+    background-position: 32%;
+}
+   
 header {
     padding-top: 10px;
 }
 
-header.a {
-    color:black;
-}
 
 main {
     padding-top: 100px; 
-    padding-bottom: 125px;
+    padding-bottom: 50px;
 }
 
 .container-1 {
     padding-bottom: 10px
-
 }
 
 .container-2 {
-    padding-bottom: 10px
+    padding-bottom: 230px
+}
+
+.text-general {
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 /* .style is used for the button */
@@ -57,9 +63,38 @@ main {
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
+#text-socialmedia {
+    color:black;
+    font-size: 18px;
+}
+
+#icon-socialmedia {
+    font-size:28px;
+    color:white
+}
 
 footer {
     position: relative;
-    bottom: 0pt;
+    bottom: 0px;
     width: 100%;
+}
+
+#email-icon {
+    font-size:28px;
+    color:white
+}
+
+/* ----about.html me page---- */
+#quote {
+    width: 43%;
+    text-align: left;
+    margin:0 auto;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+    font-weight: bold;
+    font-style: italic;
+    color:rgba(255, 255, 255, 0.65);
+    background-color:rgba(0, 0, 0, .6);
+    border: 3px solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
 }
