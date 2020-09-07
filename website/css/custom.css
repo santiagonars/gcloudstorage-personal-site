@@ -8,8 +8,7 @@ body {
     padding-right: 5px;
     text-align: center;
     /* background-image: url(''); */
-    background-image: url('https://images.unsplash.com/photo-1466970601638-4e5fb6556584?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1778&q=80');
-    /* background-repeat: no-repeat; */
+    background-image: url('https://storage.googleapis.com/www.santiagonorena.tech/images/mountain-road.jpeg');
     background-attachment: fixed;
     background-position: 32%;
 }
