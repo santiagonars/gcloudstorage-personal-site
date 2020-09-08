@@ -1,117 +1,71 @@
 <!doctype html>
 <html>
 
-<head>
+<head lang="en">
+  <!-- Meta tags -->
   <meta charset="utf-8">
   <title>Santiago Norena</title>
   <meta name="description" content="Personal porfolio website">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!--
-  <link rel="stylesheet" href="css/normalize.css"> 
-  <link rel="stylesheet" href="css/main.css"> 
-  -->
+  
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- Bootstrap Social Buttons CSS -->
+  <link rel = "stylesheet" href = "bootstrap-social.css">
+  <!-- Custom style for this file -->
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
   <header>
-    <p>My Portfolio Website</p>
-    <nav>
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-        <li>
-          <a href="page.html">Official Site</a> (Under Construction)
-        </li>
-      </ul>
-    </nav>
+    <a href="index.html" class="text-general">Home</a>
+    <br>
+    <a href="about.html" class="text-general">About</a>
+    <br>
+    <a href="codingdemo.html" class="text-general">Live Coding Demo</a>
   </header>
+  <hr style="width:20%">
   <main>
-    <section id="about">
-      <h1>Hi, I'm Santiago Norena.</h1>
-      <p>A Software Engineer that loves tech with machine learning on top.</p>
-      <img src="https://media.giphy.com/media/wW95fEq09hOI8/giphy.gif" alt="Placeholder image">
+    <section class="home-container-1">
+      <h1 class="text-general"><u><a href="about.html" class="text-general">Santiago</a></u> Norena</h1>
+      <hr style="width:20%">
+      <p class="text-general" style="font-size:20px">Software <strong>Engineering</strong> + Machine <strong>Learning</strong> + More</p>
     </section>
-    <section>
-      <h2>Experience</h2>
-      <ul>
-        <li>
-          <p>
-            <a href="https://storage.googleapis.com/santiago-info/resume/Resume-Santiago_Norena.pdf">Resume</a>
-          </p>
-        </li>
-        <li>
-          <p>
-            <a href="https://www.linkedin.com/in/santiagonorena/">LinkedIn</a>
-          </p>
-        </li>
-      </ul>
-    </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <article>
-            <header>
-              <h3>Software Project Name</h3>
-            </header>
-            <p>
-              Add project description here.
-            </p>
-            <footer>
-              <p>
-                <a href="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif">See More</a>
-              </p>
-              <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" alt="Placeholder gif">
-            </footer>
-          </article>
-        </li>
-        <li>
-          <article>
-            <header>
-              <h3>Machine Learning Project Name</h3>
-            </header>
-            <p>
-              Add project description here.
-            </p>
-            <footer>
-              <p>
-                <a href="https://media.giphy.com/media/LNqJlnwORbOYhu7txQ/giphy.gif">See More</a>
-              </p>
-              <img src="https://media.giphy.com/media/LNqJlnwORbOYhu7txQ/giphy.gif" alt="Placeholder gif">
-            </footer>
-          </article>
-        </li>
-      </ul>
+    <section class="home-container-2">
+      <a href="https://storage.googleapis.com/santiago-info/resume/Resume-Santiago_Norena.pdf">
+        <button class="favorite styled"
+          type="button">
+          <span style="font-size:18px;color:white">Resume</span>
+        </button>
+      </a>
+      <br>
+      <hr style="width:20%">
+      <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/santiagonorena/" style="color:black">
+        <span class="fa fa-linkedin" id="icon-socialmedia"></span>
+        <span id="text-socialmedia"> LinkedIn</span>
+      </a>
+      <a class="btn btn-social-icon btn-github" href="https://github.com/santiagonorena" style="color:black">
+        <span class="fa fa-github" id="icon-socialmedia"></span>
+        <span id="text-socialmedia"> GitHub</span> 
+      </a>
+      <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/22santin" style="color:black">
+        <span class="fa fa-twitter" id="icon-socialmedia"></span>
+        <span id="text-socialmedia"> Twitter</span>  
+      </a>
     </section>
   </main>
+
   <footer>
-    <section id="contact">
-      <h2>Contact</h2>
-      <ul>
-        <li>
-          <p>
-            Email: <a href="mailto:san.norena@gmail.com">san.norena@gmail.com</a>
-          </p>
-        </li>
-        <li>
-          <p>
-            Phone: (786) 424-5004
-          </p>
-        </li>
-      </ul>
+    <section>
+        <a href="mailto:san.norena@gmail.com"><i id="email-icon" class="fa">&#xf0e0;</i></a> 
     </section>
     <p>&copy; 2020 - Santiago - All rights reserved</p>  
   </footer>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
