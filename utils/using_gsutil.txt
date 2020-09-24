@@ -29,3 +29,7 @@ gsutil cp /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website
 # Migrate whole folder hierarchy / Update existing website:
 gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website gs://www.santiagonorena.tech
 
+# ----------------------------------------------------------------------------------------------------------------
+*Background image website link showing that it is free to use:
+https://www.goodfreephotos.com/public-domain-images/mountains-landscape-and-road-new-zealand.jpg.php
+
