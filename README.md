@@ -1,7 +1,7 @@
 # Personal Portofilo Website (With Serverless hosting)
 
 ### gcloudstorage-portfolio
-
+-----
 ## Site
 A static website I built from the ground up. I bootstrapped it so it works mobile as well. 
 It was a great way to practice HTML and CSS, as well as hosting a serverless static site in Google Cloud Platform. 
