@@ -5,20 +5,8 @@ gsutil cp /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/utils/t
 # (test) Migrate whole folder hierarchy / existing website:
 gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website-test gs://www.techineer.xyz
 
-# ---------------------------------------------------------------------------------------------------------------
-# ********************************** USING LOAD BALANCING (TO ADD HTTPS) ***************************************
-
-# Set index.html as main load page and 404.html as error page:
-gsutil web set -m index.html -e 404.html gs://www.techineer.xyz
-
-# Update / migrate single file to site: STILL NEED TO DO TESTING for specific folders:
-gsutil cp /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website/index.html gs://www.techineer.xyz
-
-# Migrate whole folder hierarchy / Update existing website:
-gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website gs://www.techineer.xyz
-
 # ----------------------------------------------------------------------------------------------------------------
-# ************************** USING CNAME GCLOUD STORAGE API (NO LOAD BALANCING) *********************************
+# ************************** USING GCLOUD STORAGE API AS CNAME (HTTP) *********************************
 
 # Set index.html as main load page and 404.html as error page:
 gsutil web set -m index.html -e 404.html gs://www.santiagonorena.tech
@@ -29,7 +17,15 @@ gsutil cp /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website
 # Migrate whole folder hierarchy / Update existing website:
 gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website gs://www.santiagonorena.tech
 
-# ----------------------------------------------------------------------------------------------------------------
-*Background image website link showing that it is free to use:
-https://www.goodfreephotos.com/public-domain-images/mountains-landscape-and-road-new-zealand.jpg.php
+# ---------------------------------------------------------------------------------------------------------------
+# ********************************** ADVANCE LOAD BALANCING (ADDS HTTPS) ***************************************
 
+# Set index.html as main load page and 404.html as error page:
+gsutil web set -m index.html -e 404.html gs://www.techineer.xyz
+
+# Update / migrate single file to site: STILL NEED TO DO TESTING for specific folders:
+gsutil cp /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website/index.html gs://www.techineer.xyz
+
+# Migrate whole folder hierarchy / Update existing website:
+gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website gs://www.techineer.xyz
+# ----------------------------------------------------------------------------------------------------------------
