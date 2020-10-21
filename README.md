@@ -24,7 +24,7 @@ It is a simply hosting solution doing the following steps after have a GCP accou
 5) Set the web enviroment variables for the main site nad the error page.
   - Also in 'utils/using_gsutil.txt', see section USING GCLOUD STORAGE API AS CNAME.
 
-### Technologies used:
+### Technologies/Stacks:
 - HTML
 - CSS
 - GCP (hosting)
