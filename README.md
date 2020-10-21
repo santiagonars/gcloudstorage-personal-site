@@ -24,7 +24,7 @@ This solution allows sites with HMTL, CSS, and JS files.
 5) Set the web enviroment variables for the main site nad the error page.
   - Also in 'utils/using_gsutil.txt', see section USING GCLOUD STORAGE API AS CNAME.
 
-### Technologies/Stacks:
+## Technologies/Stacks:
 - HTML
 - CSS
 - GCP (hosting)
