@@ -9,20 +9,20 @@ It was a great way to practice front-end technolgies such as HTML and CSS, as we
 
 It works for mobile as well. To do this I added bootstrapped css (Version 4.5.2) and JS script elements.
 
-## Hosting
-I hosted it serverless on Google Cloud Platform (GCP). It is using the Cloud Storage hosting feature.
-This solution allows sites with HMTL, CSS, and JS files.
+## Hosting/Deployment
+I deployed the website using the Cloud Storage hosting serverless solution offered by Google Cloud Platform (GCP).
+This solution only allows host static sites using HMTL, CSS, and JS files.
 
-### It is a simply hosting solution doing the following steps after have a GCP account:
-1) Buy a domain name.
-2) Add the TXT Record that Google provides to validate that you are the owner of the site.
-3) Create a storage bucket using the domain name the site and add the API web string (c.storage.googleapis.com) to the domain registrar as a CNAME record.
+### It is a simple hosting solution doing the following simplified steps after having a GCP account:
+1) After buying a domain name, add the TXT Record to the domain registrar.
+    - Google provides this TXT Record to validate that you are the owner of the site.
+2) Create a storage bucket using the domain name the site and add the API web string (c.storage.googleapis.com) to the domain registrar as a CNAME record.
     - This bucket will have all files that the website will use.
     - I recommend setting the TTL for the domain as low (e.i. 1 min).
-4) Using the Google Cloud SDK, from the local terminal use gsutils to push and update the website files. 
+3) Using the Google Cloud SDK, from the local terminal use gsutils to push and update the website files (Only use HMTL, CSS, and JS files). 
     - In 'utils/using_gsutil.txt', see section USING GCLOUD STORAGE API AS CNAME for my personal examples the syntax I used to do this in UNIX (MAC).
     - Mainly just used the code under comment "#Migrate whole folder hierarchy / Update existing website".
-5) Set the web enviroment variables for the main site nad the error page.
+4) Set the web enviroment variables to point to the main file (ex. index.html) and the error page (ex. 404.html).
     - Also in 'utils/using_gsutil.txt', see section USING GCLOUD STORAGE API AS CNAME.
 
 ## Technologies/Stacks:
