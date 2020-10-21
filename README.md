@@ -6,6 +6,7 @@
 A static website I built from the ground up.
 
 It was a great way to practice front-end technolgies such as HTML and CSS, as well as hosting a serverless static site in Google Cloud Platform. 
+
 It works for mobile as well. To do this I added bootstrapped css (Version 4.5.2) and JS script elements.
 
 ## Hosting
