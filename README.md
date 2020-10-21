@@ -14,8 +14,8 @@ This solution allows sites with HMTL, CSS, and JS files.
 
 It is a simply hosting solution doing the following steps after have a GCP account:
 1) Buy a domain name.
-2) Add the TXT Record that Google providest to validate that you are the owner of the site.
-3) Create a storage bucket using the domain name the site (www.domainname.com) and add the API web string (c.storage.googleapis.com) to the domain registrar as a CNAME record.
+2) Add the TXT Record that Google provides to validate that you are the owner of the site.
+3) Create a storage bucket using the domain name the site and add the API web string (c.storage.googleapis.com) to the domain registrar as a CNAME record.
   - This bucket will have all files that the website will use.
   - I recommend setting the TTL for the domain as low (e.i. 1 min).
 4) Using the Google Cloud SDK, from the local terminal use gsutils to push and update the website files. 
