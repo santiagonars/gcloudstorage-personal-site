@@ -1,4 +1,4 @@
-# Personal Website (With Serverless hosting)
+# Personal Website (With Serverless Hosting)
 
 ### gcloudstorage-portfolio
 -----
