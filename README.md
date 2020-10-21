@@ -12,7 +12,7 @@ It works for mobile as well. To do this I added bootstrapped css (Version 4.5.2)
 I hosted it serverless on Google Cloud Platform (GCP). It is using the Cloud Storage hosting feature.
 This solution allows sites with HMTL, CSS, and JS files.
 
-It is a simply hosting solution doing the following steps after have a GCP account:
+#### It is a simply hosting solution doing the following steps after have a GCP account:
 1) Buy a domain name.
 2) Add the TXT Record that Google provides to validate that you are the owner of the site.
 3) Create a storage bucket using the domain name the site and add the API web string (c.storage.googleapis.com) to the domain registrar as a CNAME record.
