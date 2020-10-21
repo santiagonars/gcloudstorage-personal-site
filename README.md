@@ -16,13 +16,13 @@ This solution allows sites with HMTL, CSS, and JS files.
 1) Buy a domain name.
 2) Add the TXT Record that Google provides to validate that you are the owner of the site.
 3) Create a storage bucket using the domain name the site and add the API web string (c.storage.googleapis.com) to the domain registrar as a CNAME record.
-  - This bucket will have all files that the website will use.
-  - I recommend setting the TTL for the domain as low (e.i. 1 min).
+    - This bucket will have all files that the website will use.
+    - I recommend setting the TTL for the domain as low (e.i. 1 min).
 4) Using the Google Cloud SDK, from the local terminal use gsutils to push and update the website files. 
-  - In 'utils/using_gsutil.txt', see section USING GCLOUD STORAGE API AS CNAME for my personal examples the syntax I used to do this in UNIX (MAC).
-  - Mainly just used the code under comment "#Migrate whole folder hierarchy / Update existing website".
+    - In 'utils/using_gsutil.txt', see section USING GCLOUD STORAGE API AS CNAME for my personal examples the syntax I used to do this in UNIX (MAC).
+    - Mainly just used the code under comment "#Migrate whole folder hierarchy / Update existing website".
 5) Set the web enviroment variables for the main site nad the error page.
-  - Also in 'utils/using_gsutil.txt', see section USING GCLOUD STORAGE API AS CNAME.
+    - Also in 'utils/using_gsutil.txt', see section USING GCLOUD STORAGE API AS CNAME.
 
 ## Technologies/Stacks:
 - HTML
