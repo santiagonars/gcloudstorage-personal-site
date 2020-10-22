@@ -1,7 +1,6 @@
 # Personal Website (With Hosting on Google Cloud)
 
 #### gcloudstorage-personal-site
-
 Author: Santiago Norena
 -----
 ## Site:
