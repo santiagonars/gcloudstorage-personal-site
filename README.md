@@ -2,6 +2,7 @@
 
 #### gcloudstorage-personal-site
 Author: Santiago Norena
+
 -----
 ## Site:
 A responsive static website I built from the ground up.
