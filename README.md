@@ -30,6 +30,7 @@ This solution only allows host static sites using HMTL, CSS, and JS files.
 - CSS
 - GCP (hosting)
 
+-----
 ### Mobile
 ![Mobile Version](deployment/my_site-mobile.png) 
 
