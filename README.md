@@ -1,4 +1,4 @@
-# Personal Website (With Serverless Hosting)
+# Personal Website (With Hosting on Google Cloud)
 
 ### gcloudstorage-personal-site
 -----
