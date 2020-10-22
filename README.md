@@ -3,7 +3,7 @@
 ### gcloudstorage-personal-site
 -----
 ## Site
-A static website I built from the ground up.
+A responsive static website I built from the ground up.
 
 It was a great way to practice front-end technolgies such as HTML and CSS, as well as hosting a serverless static site in Google Cloud Platform. 
 
@@ -30,6 +30,8 @@ This solution only allows host static sites using HMTL, CSS, and JS files.
 - CSS
 - GCP (hosting)
 
+### Mobile
 ![Mobile Version](deployment/my_site-mobile.png) 
 
-[Web Version](deployment/my_site-web.png)
+### Web
+![Web Version](deployment/my_site-web.png)
