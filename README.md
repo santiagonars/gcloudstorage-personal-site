@@ -1,6 +1,6 @@
 # Personal Website (With Serverless Hosting)
 
-### gcloudstorage-portfolio
+### gcloudstorage-personal-site
 -----
 ## Site
 A static website I built from the ground up.
