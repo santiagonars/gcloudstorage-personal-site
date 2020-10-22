@@ -12,8 +12,8 @@ It was a great way to practice front-end technolgies such as HTML and CSS, as we
 It works for mobile as well. To do this I added bootstrapped css (Version 4.5.2) and JS script elements.
 
 ## Hosting/Deployment:
-I deployed the website using the Cloud Storage hosting serverless solution offered by Google Cloud Platform (GCP).
-This solution only allows host static sites using HMTL, CSS, and JS files.
+I deployed the website using the Cloud Storage hosting service offered by Google Cloud Platform (GCP).
+This solution only allows hosting for static sites with HMTL, CSS, and JS files.
 
 ### It is a simple hosting solution doing the following simplified steps after having a GCP account:
 1) After buying a domain name, add the TXT Record to the domain registrar.
