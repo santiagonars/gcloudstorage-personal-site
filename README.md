@@ -2,14 +2,14 @@
 
 ### gcloudstorage-personal-site
 -----
-## Site
+## Site:
 A responsive static website I built from the ground up.
 
 It was a great way to practice front-end technolgies such as HTML and CSS, as well as hosting a serverless static site in Google Cloud Platform. 
 
 It works for mobile as well. To do this I added bootstrapped css (Version 4.5.2) and JS script elements.
 
-## Hosting/Deployment
+## Hosting/Deployment:
 I deployed the website using the Cloud Storage hosting serverless solution offered by Google Cloud Platform (GCP).
 This solution only allows host static sites using HMTL, CSS, and JS files.
 
