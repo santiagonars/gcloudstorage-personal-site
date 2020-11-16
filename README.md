@@ -15,7 +15,7 @@ It works for mobile as well. To do this I added bootstrapped css (Version 4.5.2)
 I deployed the website using the Cloud Storage hosting service offered by Google Cloud Platform (GCP).
 This solution only allows hosting for static sites with HMTL, CSS, and JS files.
 
-### It is a simple hosting solution doing the following simplified steps after having a GCP account:
+### It is a simple hosting solution doing the following steps with a GCP account:
 1) After buying a domain name, add the TXT Record to the domain registrar.
     - Google provides this TXT Record to validate that you are the owner of the site.
 2) Create a storage bucket using the domain name the site and add the API web string (c.storage.googleapis.com) to the domain registrar as a CNAME record.
