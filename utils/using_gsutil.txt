@@ -1,9 +1,9 @@
 # ***************************************** TESTING ***********************************************************
 # (test) Upload single file to site:
-gsutil cp /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/utils/test.txt gs://www.techineer.xyz
+gsutil cp /Users/santiagonorena/Documents/GitHub/gcloudstorage-personal-site/utils/test.txt gs://www.techineer.xyz
 
 # (test) Migrate whole folder hierarchy / existing website:
-gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website-test gs://www.techineer.xyz
+gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-personal-site/website-test gs://www.techineer.xyz
 
 # ----------------------------------------------------------------------------------------------------------------
 # ************************** USING GCLOUD STORAGE API AS CNAME (HTTP) *********************************
@@ -12,10 +12,10 @@ gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/w
 gsutil web set -m index.html -e 404.html gs://www.santiagonorena.tech
 
 # Update / migrate single file to site: STILL NEED TO DO TESTING for specific folders:
-gsutil cp /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website/index.html gs://www.santiagonorena.tech
+gsutil cp /Users/santiagonorena/Documents/GitHub/gcloudstorage-personal-site/website/index.html gs://www.santiagonorena.tech
 
 # Migrate whole folder hierarchy / Update existing website:
-gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website gs://www.santiagonorena.tech
+gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-personal-site/website gs://www.santiagonorena.tech
 
 # ---------------------------------------------------------------------------------------------------------------
 # ********************************** ADVANCE LOAD BALANCING (ADDS HTTPS) ***************************************
@@ -24,8 +24,8 @@ gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/w
 gsutil web set -m index.html -e 404.html gs://www.techineer.xyz
 
 # Update / migrate single file to site: STILL NEED TO DO TESTING for specific folders:
-gsutil cp /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website/index.html gs://www.techineer.xyz
+gsutil cp /Users/santiagonorena/Documents/GitHub/gcloudstorage-personal-site/website/index.html gs://www.techineer.xyz
 
 # Migrate whole folder hierarchy / Update existing website:
-gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-portfolio/website gs://www.techineer.xyz
+gsutil rsync -R /Users/santiagonorena/Documents/GitHub/gcloudstorage-personal-site/website gs://www.techineer.xyz
 # ----------------------------------------------------------------------------------------------------------------
