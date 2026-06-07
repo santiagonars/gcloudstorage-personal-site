@@ -2,7 +2,6 @@
   const nameEl = document.querySelector('.hero h1');
   if (!nameEl) return;
 
-  // Wrap each character in a span so we can animate individually
   nameEl.innerHTML = nameEl.textContent
     .split('')
     .map(ch =>
@@ -10,25 +9,20 @@
     )
     .join('');
 
-  nameEl.style.cursor = 'crosshair';
-  nameEl.addEventListener('click', shoot);
+  const PAUSE_BETWEEN = 3200; // ms idle before next run
 
   function shoot() {
-    nameEl.removeEventListener('click', shoot);
-
-    const chars = [...nameEl.querySelectorAll('.name-ch')];
+    const chars    = [...nameEl.querySelectorAll('.name-ch')];
     const nameRect = nameEl.getBoundingClientRect();
-    const startX = nameRect.left - 70;
-    const endX   = nameRect.right + 100;
-    const midY   = nameRect.top + nameRect.height / 2;
+    const startX   = nameRect.left - 70;
+    const endX     = nameRect.right + 100;
+    const midY     = nameRect.top + nameRect.height / 2;
 
-    // Pre-compute the center-x of each character
     const charData = chars.map(ch => {
       const r = ch.getBoundingClientRect();
       return { el: ch, cx: r.left + r.width / 2, hit: false };
     });
 
-    // Build the spaceship  ▶▶
     const ship = document.createElement('div');
     ship.textContent = '▶▶';
     Object.assign(ship.style, {
@@ -45,7 +39,7 @@
     });
     document.body.appendChild(ship);
 
-    const speed    = (endX - startX) / 900; // px/ms
+    const speed     = (endX - startX) / 900;
     const startTime = performance.now();
 
     function frame(now) {
@@ -64,7 +58,7 @@
         requestAnimationFrame(frame);
       } else {
         ship.remove();
-        setTimeout(() => restore(chars), 700);
+        restore(chars);
       }
     }
     requestAnimationFrame(frame);
@@ -96,7 +90,6 @@
     el.style.transition = 'none';
     el.style.color      = '#64ffda';
     el.style.textShadow = '0 0 10px #64ffda';
-    // Force reflow so the color flash registers before fading
     void el.offsetWidth;
     el.style.transition = 'all 0.4s ease-out';
     el.style.opacity    = '0';
@@ -106,14 +99,17 @@
   function restore(chars) {
     chars.forEach((ch, i) => {
       setTimeout(() => {
-        ch.style.transition  = 'all 0.35s ease-out';
-        ch.style.opacity     = '1';
-        ch.style.transform   = 'none';
-        ch.style.color       = '';
-        ch.style.textShadow  = '';
+        ch.style.transition = 'all 0.35s ease-out';
+        ch.style.opacity    = '1';
+        ch.style.transform  = 'none';
+        ch.style.color      = '';
+        ch.style.textShadow = '';
       }, i * 35);
     });
-    // Re-arm click after letters finish restoring
-    setTimeout(() => nameEl.addEventListener('click', shoot), chars.length * 35 + 600);
+    const restoreDuration = chars.length * 35 + 400;
+    setTimeout(() => setTimeout(shoot, PAUSE_BETWEEN), restoreDuration);
   }
+
+  // Kick off after a short initial delay
+  setTimeout(shoot, 1800);
 })();
