@@ -1,55 +1,38 @@
 <!doctype html>
-<html>
-
-<head lang="en">
-  <!-- Meta tags -->
+<html lang="en">
+<head>
   <meta charset="utf-8">
-  <title>Santiago Norena</title>
-  <meta name="description" content="Personal porfolio website">
+  <title>About — Santiago Norena</title>
+  <meta name="description" content="About Santiago Norena">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-  <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <!-- Bootstrap Social Buttons CSS -->
-  <link rel = "stylesheet" href = "bootstrap-social.css">
-  <!-- Custom style for this file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/custom.css">
 </head>
-
 <body>
-  <header>
-    <a href="index.html" class="text-general">Home</a>
-    <br>
-    <a href="about.html" class="text-general">About</a>
-  </header>
-  <hr style="width:20%">
-  <main>
-    <section>
-        <h1>Hello!</h1>
-        <img src="images/santi.jpg" alt="Person" style="width:250px;height:300px">
-        <br><br>
-        <div id="quote">
-          <p>I am an Engineer born in Medellin and raised in Miami. I enjoy building technology, reading, and the outdoors. I love to take on new challenges.</p>
-          <p>Contact — san.norena@gmail.com</p>
-        </div>
-        <!-- 
-        <a href="codingdemo.html" class="text-general" style="font-weight:bold;font-size:22px">
-          Live Coding Demo <br> (Status: <i class='fa fa-eye' style='font-size:20px;color:green'></i><span style="font-style:italic;"> currently in session</span>)</a>
-        -->
-    </section>
+
+  <canvas id="particle-canvas"></canvas>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+  </nav>
+
+  <main class="about">
+    <img class="about-photo" src="images/santi.jpg" alt="Santiago Norena">
+
+    <div class="about-bio">
+      <p>I am an Engineer born in Medellin and raised in Miami. I enjoy building technology, reading, and the outdoors. I love to take on new challenges.</p>
+      <p>Contact — <a href="mailto:san.norena@gmail.com">san.norena@gmail.com</a></p>
+    </div>
   </main>
 
   <footer>
-    <section>
-        <a href="mailto:san.norena@gmail.com"><i id="email-icon" class="fa">&#xf0e0;</i></a> 
-    </section>
-    <p>&copy; 2020 - Santiago - All rights reserved</p>  
+    <a href="mailto:san.norena@gmail.com" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <p>&copy; 2024 Santiago Norena</p>
   </footer>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <script src="js/particles.js"></script>
 </body>
 </html>
