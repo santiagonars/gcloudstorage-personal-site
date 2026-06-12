@@ -1,17 +1,17 @@
-# Personal Website (With Hosting on Google Cloud)
+# Personal Website (Hosted on Google Cloud)
 
 #### gcloudstorage-personal-site
 Author: Santiago Norena
 
 -----
-## Site:
+# Site:
 A responsive static website I built from the ground up.
 
 It was a great way to practice front-end technolgies such as HTML and CSS, as well as hosting a serverless static site in Google Cloud Platform. 
 
 It works for mobile as well. To do this I added bootstrapped css (Version 4.5.2) and JS script elements.
 
-## Hosting/Deployment:
+# Hosting / Deployment:
 I deployed the website using the Cloud Storage hosting service offered by Google Cloud Platform (GCP).
 This solution only allows hosting for static sites with HMTL, CSS, and JS files.
 
@@ -27,15 +27,27 @@ This solution only allows hosting for static sites with HMTL, CSS, and JS files.
 4) Set the web enviroment variables to point to the main file (ex. index.html) and the error page (ex. 404.html).
     - Also in 'utils/using_gsutil.txt', see section USING GCLOUD STORAGE API AS CNAME.
 
-## Tech Stack:
-- HTML
-- CSS
-- GCP (hosting)
+>### Tech Stack:
+>- HTML
+>- CSS
+>- JS
+>- GCP (hosting)
 
------
 
-### Web
-![Web Version](deployment/my_site-web.png)
+# UI:
 
-### Mobile
-![Mobile Version](deployment/my_site-mobile.png) 
+### Version 2
+
+#### Web
+![Home Web](v2/index-web.png)
+
+#### Mobile
+![Home Mobile](v2/index-mobile.png)
+
+### Version 1
+
+#### Web
+![Web Version](v1/my_site-web.png)
+
+#### Mobile
+![Mobile Version](v1/my_site-mobile.png) 

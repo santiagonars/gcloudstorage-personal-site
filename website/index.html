@@ -1,69 +1,50 @@
 <!doctype html>
-<html>
-
-<head lang="en">
-  <!-- Meta tags -->
+<html lang="en">
+<head>
   <meta charset="utf-8">
   <title>Santiago Norena</title>
-  <meta name="description" content="Personal porfolio website">
+  <meta name="description" content="Personal portfolio — Santiago Norena, Software · Data · ML">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-  <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <!-- Bootstrap Social Buttons CSS -->
-  <link rel = "stylesheet" href = "bootstrap-social.css">
-  <!-- Custom style for this file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/custom.css">
 </head>
-
 <body>
-  <header>
-    <a href="index.html" class="text-general">Home</a>
-    <br>
-    <a href="about.html" class="text-general">About</a>
-  </header>
-  <hr style="width:20%">
-  <main>
-    <section class="home-container-1">
-      <h1 class="text-general"><u><a href="about.html" class="text-general">Santiago</a></u> Norena</h1>
-      <hr style="width:20%">
-      <p class="text-general" style="font-size:20px"><strong>  Software  </strong>|  Data  |<strong>  ML</strong></p>
-    </section>
-    <section class="home-container-2">
-      <a href="https://storage.googleapis.com/santiago-info/resume/santiago_resume.pdf">
-        <button class="favorite styled"
-          type="button">
-          <span style="font-size:18px;color:white">Resume</span>
-        </button>
+
+  <canvas id="particle-canvas"></canvas>
+
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <main class="hero">
+    <h1>Santiago Norena</h1>
+    <p class="tagline">Software &nbsp;·&nbsp; Data &nbsp;·&nbsp; ML &nbsp;·&nbsp; AI</p>
+
+    <a class="btn-resume"
+       href="https://storage.googleapis.com/santiago-info/resume/santiago_resume.pdf"
+       target="_blank" rel="noopener">
+      Resume
+    </a>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/santiagonorena/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
       </a>
-      <br>
-      <hr style="width:20%">
-      <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/santiagonorena/" style="color:black">
-        <span class="fa fa-linkedin" id="icon-socialmedia"></span>
-        <span id="text-socialmedia"> LinkedIn</span>
+      <a href="https://github.com/santiagonars" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="fab fa-github"></i>
       </a>
-      <a class="btn btn-social-icon btn-github" href="https://github.com/santiagonars" style="color:black">
-        <span class="fa fa-github" id="icon-socialmedia"></span>
-        <span id="text-socialmedia"> GitHub</span> 
-      </a>
-      <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/santiago_nars" style="color:black">
-        <span class="fa fa-twitter" id="icon-socialmedia"></span>
-        <span id="text-socialmedia"> Twitter</span>  
-      </a>
-    </section>
+    </div>
   </main>
 
   <footer>
-    <section>
-        <a href="mailto:san.norena@gmail.com"><i id="email-icon" class="fa">&#xf0e0;</i></a> 
-    </section>
-    <p>&copy; 2020 - Santiago - All rights reserved</p>  
+    <a href="mailto:san.norena@gmail.com" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <p>&copy; 2024 Santiago Norena</p>
   </footer>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <script src="js/particles.js"></script>
+  <script src="js/name-effect.js"></script>
 </body>
 </html>
