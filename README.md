@@ -27,11 +27,11 @@ This solution only allows hosting for static sites with HMTL, CSS, and JS files.
 4) Set the web enviroment variables to point to the main file (ex. index.html) and the error page (ex. 404.html).
     - Also in 'utils/using_gsutil.txt', see section USING GCLOUD STORAGE API AS CNAME.
 
-### Tech Stack:
-- HTML
-- CSS
-- JS
-- GCP (hosting)
+>### Tech Stack:
+>- HTML
+>- CSS
+>- JS
+>- GCP (hosting)
 
 
 # UI:
@@ -41,7 +41,7 @@ This solution only allows hosting for static sites with HMTL, CSS, and JS files.
 #### Web
 ![Home Web](v2/index-web.png)
 
-#### Home — Mobile
+#### Mobile
 ![Home Mobile](v2/index-mobile.png)
 
 ### Version 1
